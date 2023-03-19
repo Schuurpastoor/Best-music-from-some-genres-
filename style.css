@@ -1,0 +1,133 @@
+.genres {
+    display: flex;
+    flex-direction: row;   
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.header {
+    text-align: center;
+    color: white;
+    background-color: rgb(138, 4, 46);
+    height: 50px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+html {
+    background-color: rgb(48, 48, 48);
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    
+  }
+  
+  .image {
+    height: 300px;
+    width: 300px;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(48, 48, 48);
+    overflow: hidden;
+    height: 0px;
+    /*height: 300px;*/
+    width: 300px;
+    transition-property: height;
+    transition: .5s ease;
+    opacity: 0.8;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  a {
+    color: white;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+  
+  }
+  
+  .dropbtn {
+    background-color: grey;
+    color: white;
+    font-weight: bolder; 
+    height: 50px;
+    width: 70px;
+    font-size: 16px;
+    border: 2px;
+    border-style: groove;
+    border-color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: grey;
+    
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    border: 2px;
+    border-style: groove;
+    border-color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

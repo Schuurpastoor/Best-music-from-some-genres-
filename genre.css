@@ -1,0 +1,95 @@
+img { 
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+}
+* {
+     margin: 0; 
+     padding: 0;
+    }
+html {
+     background-color: rgb(48, 48, 48);
+     margin-top: 50px;
+    }
+.title {
+     text-align: center;
+     color: white;
+     background-color: rgb(138, 4, 46);
+     height: 50px;
+     z-index: 1;
+     position: fixed;
+     top: 0;
+     width: 100%;
+    }
+p {
+     color: white;
+     text-align: left;
+    }
+.informationbox {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-content: flex-start;
+    }
+.information {
+     margin: 20px;
+     height: 500px;
+     width: 500px;
+     font-size: 25px;
+    }
+.Informatietitel {
+     color: white;
+    }
+.Home {
+    color: white;
+    border: 2px;
+    border-style: groove;
+    border-color: white;
+    padding: 10px;
+    background-color: grey;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+  
+  }
+  
+  .dropbtn {
+    background-color: grey;
+    color: white;
+    font-weight: bolder; 
+    height: 50px;
+    width: 70px;
+    font-size: 16px;
+    border: 2px;
+    border-style: groove;
+    border-color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: grey;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    border: 2px;
+    border-style: groove;
+    border-color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
